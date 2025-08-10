@@ -13,7 +13,10 @@ try {
     echo "Connected successfully<br>";
 
     // Query
-    $sql = "SHOW TABLES";
+$sql = "ALTER TABLE testetable ADD email VARCHAR(255) UNIQUE NOT NULL DEFAULT ''";
+
+
+    // $sql = "SHOW TABLES";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
 
