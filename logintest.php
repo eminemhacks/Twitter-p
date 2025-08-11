@@ -14,6 +14,7 @@
                 // Successful login
                 session_start();
                 $_SESSION["user_id"] = $user["id"];
+                $_SESSION["name"] = $user["name"];
                 header("Location: user_login/logout.php");
                 exit;
             } else {
@@ -55,7 +56,7 @@
                         <button type="submit" class="btn">Login</button>
                     </form><br>
                     <p>Don't have an Account?</p>
-                    <a href="user_login/register.php">Register</a>
+                    <a href="test2.php">Register</a>
                 </div>
             </div>
         </div>
